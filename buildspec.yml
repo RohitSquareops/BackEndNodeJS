@@ -1,0 +1,26 @@
+version: 0.2
+
+run-as: root
+
+env:
+  parameter-store:
+    DB_URL: "/Rohit_Mongo_DB_URL"
+
+
+phases:
+  install:
+    commands:
+      - echo "Installtion Completed!!"
+  pre_build:
+    commands:
+      - echo "Install dependency"
+      - echo "DB_URL=$DB_URL" > .env
+      - npm i
+      
+
+
+
+artifacts:
+  files:
+    - echo "Upload artifact to bucket for deploy"
+    - '**/*'
