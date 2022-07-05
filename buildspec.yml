@@ -15,7 +15,7 @@ phases:
     commands:
       - echo "Install dependency"
       - echo "DB_URL=$DB_URL" > .env
-      - npm i
+      
       
 
 
