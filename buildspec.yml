@@ -14,7 +14,7 @@ phases:
   pre_build:
     commands:
       - echo "Install dependency"
-      - echo "DB_URL=$DB_URL" >> .env
+      - echo "DB_URL=$DB_URL" > .env
       
       
 
